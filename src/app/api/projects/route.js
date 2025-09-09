@@ -22,6 +22,7 @@ export async function POST(req) {
   try {
     await connectDB();
     const body = await req.json();
+    console.log(body);
     const project = await Project.create(body);
     return NextResponse.json(project, { status: 201 });
   } catch (error) {

@@ -85,6 +85,7 @@
 //     </div>
 //   );
 // }
+
 "use client";
 import { useEffect, useState } from "react";
 import { getSettings, updateSettings, removeSettings } from "@/apis/apis";
